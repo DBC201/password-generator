@@ -22,9 +22,6 @@ def generate_password():
 
             password = base64.urlsafe_b64encode(random_bytes).decode('utf-8')
             password = password[:length]
-
-            # Convert bytes to a base64 encoded string and strip any padding
-            password = base64.urlsafe_b64encode(random_bytes).decode('utf-8')
         else:
             include_uppercase = uppercase_var.get()
             include_numbers = numbers_var.get()
